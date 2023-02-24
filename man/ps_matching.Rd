@@ -2,18 +2,23 @@
 % Please edit documentation in R/RcppExports.R
 \name{ps_matching}
 \alias{ps_matching}
-\title{Propesnity Score}
+\title{Propensity Score}
 \usage{
 ps_matching(x)
+}
+\arguments{
+\item{x}{\itemize{
+\item A vector of numeric argument
+}}
 }
 \value{
 A list with two vectors (\code{match_id}, \code{match_x}).
 }
 \description{
-Propesnity Score
+Propensity Score
 }
 \examples{
 set.seed(1231)
-x <- cbind(runif(5))
+x <- runif(5)
 ps_matching(x)
 }

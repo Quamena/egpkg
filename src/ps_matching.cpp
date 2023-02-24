@@ -1,12 +1,12 @@
 #include <Rcpp.h>
 using namespace Rcpp;
-//' Propesnity Score
+//' Propensity Score
 //' @return A list with two vectors (`match_id`, `match_x`).
-//' @params
-//' x
+//' @param
+//' x - A vector of numeric argument
 //' @examples
 //' set.seed(1231)
-//' x <- cbind(runif(5))
+//' x <- runif(5)
 //' ps_matching(x)
 //' @export
 // [[Rcpp::export]]
